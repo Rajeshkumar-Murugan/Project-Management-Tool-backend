@@ -56,7 +56,7 @@ router.post('/register', async(req, res, next)=> {
         html: `
 
         <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-       <a href ="http://localhost:4000/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+       <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
        <br/>
        <b>Note: <b><p>Link will be valid only for 5mins</p>
         `                
@@ -102,7 +102,7 @@ router.post('/register', async(req, res, next)=> {
         html: `
 
         <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-       <a href ="http://localhost:4000/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+       <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
        <br/>
        <b>Note: <b><p>Link will be valid only for 5mins</p>
         `                
@@ -169,7 +169,7 @@ router.post('/login', async(req, res)=>{
           html: `
   
           <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-         <a href ="http://localhost:4000/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+         <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
          <br/>
          <b>Note: <b><p>Link will be valid only for 5mins</p>
           `                
@@ -215,7 +215,7 @@ router.get('/verify-token/:token', async(req, res)=>{
             <img src='https://cdn.dribbble.com/users/2185205/screenshots/7886140/02-lottie-tick-01-instant-2.gif' alt='logo'/>
             
             <h4>Email Verification<h4><br>
-     <p> Email verified successfully. Please <a href="https://nostalgic-wozniak-8dd50b.netlify.app/">Click here</a> to login</p>
+     <p> Email verified successfully. Please <a href="https://thriving-brioche-e4bb68.netlify.app/">Click here</a> to login</p>
      </center>
      `);
     
@@ -258,7 +258,7 @@ router.post('/forget-password', async(req, res)=>{
             </center>
             <h4>Password Reset Link<h4><br>
             <p> Please click 
-            <a href ="http://localhost:4000/users/forget-password/link/${keyvalue}" method="get">Confirm</a>to set new password</p><br>
+            <a href ="https://project-manage-tool-backend.herokuapp.com/users/forget-password/link/${keyvalue}" method="get">Confirm</a>to set new password</p><br>
           ` };
         
           
@@ -386,7 +386,7 @@ router.get('/forget-password/link/:key', async(req, res)=>{
     </script>
 </head>
 <body>
-<form action="http://localhost:4000/users/forget-password/update/${keys}", method="POST" style="max-width:500px;margin:auto">
+<form action="https://project-manage-tool-backend.herokuapp.com/users/forget-password/update/${keys}", method="POST" style="max-width:500px;margin:auto">
 <center>
 <img src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/a6468b24146609.56330c8f468d6.gif' alt='logo'/>
 </center>
@@ -450,7 +450,7 @@ router.post('/forget-password/update/:key', async(req, res)=>{
         <center>
         <img src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/a6468b24146609.56330c8f468d6.gif' alt='logo'/>
         </center>
-        <p>Password updated Successfully, Please <a href="https://nostalgic-wozniak-8dd50b.netlify.app/">Click Here</a> to login</p>`)                   
+        <p>Password updated Successfully, Please <a href="https://thriving-brioche-e4bb68.netlify.app/">Click Here</a> to login</p>`)                   
   }
   else{
         res.send(`
