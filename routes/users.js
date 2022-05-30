@@ -7,7 +7,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'testingforweb01@gmail.com',
-    pass: 'Protech@123'
+    pass: 'xkzddveshwhrumxm'
   }
 });
 
@@ -37,7 +37,7 @@ router.post('/register', async(req, res, next)=> {
   try {
     const db =await client.db(dbName);
     let user = await db.collection('auth').findOne({email:req.body.email})
-    console.log(user)
+    
    
     if(user){
       if(user.verify == 'N'){
