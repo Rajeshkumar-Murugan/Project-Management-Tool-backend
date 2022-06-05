@@ -448,14 +448,16 @@ router.post('/forget-password/update/:key', async(req, res)=>{
         let Verified = await db.collection('auth').updateOne({email:keycheck.email},{$set:{password:hash}})
         res.send(`
         <center>
-        <img src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/a6468b24146609.56330c8f468d6.gif' alt='logo'/>
+        <img src='https://tendercareschools.org/images/security.gif' alt='logo'/>
+        
+        <p>Password updated Successfully, Please <a href="https://nostalgic-wozniak-8dd50b.netlify.app/">Click Here</a> to login</p>
         </center>
-        <p>Password updated Successfully, Please <a href="https://thriving-brioche-e4bb68.netlify.app/">Click Here</a> to login</p>`)                   
+        `)                   
   }
   else{
         res.send(`
         <center>
-        <img src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/a6468b24146609.56330c8f468d6.gif' alt='logo'/>
+        <img src='https://techcrunch.com/wp-content/uploads/2019/09/password.gif' alt='logo'/>
         </center>
         Key is invalid, please click forget password link again to generate new key
         `)
