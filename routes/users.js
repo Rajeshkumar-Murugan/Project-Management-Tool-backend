@@ -450,7 +450,7 @@ router.post('/forget-password/update/:key', async(req, res)=>{
         <center>
         <img src='https://tendercareschools.org/images/security.gif' alt='logo'/>
         
-        <p>Password updated Successfully, Please <a href="https://nostalgic-wozniak-8dd50b.netlify.app/">Click Here</a> to login</p>
+        <p>Password updated Successfully, Please <a href="https://thriving-brioche-e4bb68.netlify.app/">Click Here</a> to login</p>
         </center>
         `)                   
   }
