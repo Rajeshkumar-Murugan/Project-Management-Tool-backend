@@ -20,7 +20,7 @@ router.get('/', async(req, res, next)=>{
     console.log(error)
     res.json({
       statusCode:500,
-      message:"Internal Server Error" 
+      message:"Internal Server Error ooccured" 
     })
   }
   finally{
