@@ -56,7 +56,7 @@ router.post('/register', async(req, res, next)=> {
         html: `
 
         <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-       <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+       <a href ="https://project-management-tool.onrender.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
        <br/>
        <b>Note: <b><p>Link will be valid only for 5mins</p>
         `                
@@ -102,7 +102,7 @@ router.post('/register', async(req, res, next)=> {
         html: `
 
         <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-       <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+       <a href ="https://project-management-tool.onrender.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
        <br/>
        <b>Note: <b><p>Link will be valid only for 5mins</p>
         `                
@@ -169,7 +169,7 @@ router.post('/login', async(req, res)=>{
           html: `
   
           <img src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/success_celebration_800x600.gif"><br/>
-         <a href ="https://project-manage-tool-backend.herokuapp.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
+         <a href ="https://project-management-tool.onrender.com/users/verify-token/${token}" method="get">Click Here</a> to verify your account.
          <br/>
          <b>Note: <b><p>Link will be valid only for 5mins</p>
           `                
@@ -258,7 +258,7 @@ router.post('/forget-password', async(req, res)=>{
             </center>
             <h4>Password Reset Link<h4><br>
             <p> Please click 
-            <a href ="https://project-manage-tool-backend.herokuapp.com/users/forget-password/link/${keyvalue}" method="get">Confirm</a>to set new password</p><br>
+            <a href ="https://project-management-tool.onrender.com/users/forget-password/link/${keyvalue}" method="get">Confirm</a>to set new password</p><br>
           ` };
         
           
@@ -386,7 +386,7 @@ router.get('/forget-password/link/:key', async(req, res)=>{
     </script>
 </head>
 <body>
-<form action="https://project-manage-tool-backend.herokuapp.com/users/forget-password/update/${keys}", method="POST" style="max-width:500px;margin:auto">
+<form action="https://project-management-tool.onrender.com/users/forget-password/update/${keys}", method="POST" style="max-width:500px;margin:auto">
 <center>
 <img src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/a6468b24146609.56330c8f468d6.gif' alt='logo'/>
 </center>
